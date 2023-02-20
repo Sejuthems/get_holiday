@@ -5,9 +5,9 @@ import datetime
 import streamlit as st
 
 
-st.set_page_config(page_title="Debt Collection project")
-st.header("債権回収自動コールシステム_PHASE-3")
-st.subheader("下記のところにエクセルのファイルアップしてください")
+st.set_page_config(page_title="Holidays Japan")
+st.header("休日計算")
+st.subheader("休日期間をお選びください")
 
 
 
@@ -15,11 +15,11 @@ st.subheader("下記のところにエクセルのファイルアップしてく
 
 col1, col2 = st.columns(2)
 with col1:
-   st.header("START")
+   st.header("始")
    d1 = st.date_input("Select START", datetime.date(2019, 7, 6))
 
 with col2:
-   st.header("END")
+   st.header("終")
    d2 = st.date_input("Select END", datetime.date(2019, 7, 6))
 
    
