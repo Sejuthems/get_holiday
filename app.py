@@ -6,8 +6,8 @@ import streamlit as st
 
 
 st.set_page_config(page_title="Holidays Japan")
-st.header("休日計算")
-st.subheader("休日期間をお選びください")
+st.header("祝日計算")
+st.subheader("祝日期間をお選びください")
 
 
 
@@ -26,6 +26,7 @@ with col2:
 if st.button("実行"):
    kitni_cutti = jpholiday.between(d1, d2)
    i = 1
+   st.write("お選びした期間の中で祝日は"+str(len(kitni_cutti))+"日あります")
    for dayitem in kitni_cutti:
       st.write(str(i) + ". " + dayitem[0].strftime("%Y/%m/%d") + "   " + dayitem[1])
       i = i +1
