@@ -21,7 +21,7 @@ with col2:
 
    
 if st.button("実行"):
-   st.wrtie("I am here to run")
+   st.write(d1)
 
 """
 # datetime.date
