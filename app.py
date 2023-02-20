@@ -21,7 +21,8 @@ with col2:
 
    
 if st.button("実行"):
-   st.write(d1)
+   kitni_cutti = jpholiday.between(d1, d2)
+   st.write(kitni_cutti)
 
 """
 # datetime.date
