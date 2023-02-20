@@ -22,7 +22,12 @@ with col2:
    
 if st.button("実行"):
    kitni_cutti = jpholiday.between(d1, d2)
-   st.write(kitni_cutti)
+   for dayitem in kitni_cutti:
+      i = 1
+      st.write(str(i) + ". " + dayitem[0].strftime("%Y/%m/%d") + "   " + dayitem[1])
+      i = i +1
+      
+
 
 """
 # datetime.date
