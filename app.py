@@ -19,6 +19,9 @@ with col2:
    st.header("END")
    d2 = st.date_input("Select END", datetime.date(2019, 7, 6))
 
+   
+if st.button("実行"):
+   st.wrtie("I am here to run")
 
 """
 # datetime.date
