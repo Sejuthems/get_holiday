@@ -12,7 +12,8 @@ import streamlit as st
 col1, col2 = st.columns(2)
 with col1:
    st.header("START")
-   d1 = st.date_input("Select START", datetime.date(2019, 7, 6))         
+   d1 = st.date_input("Select START", datetime.date(2019, 7, 6))
+   st.write(type(d1))
 
 with col2:
    st.header("END")
