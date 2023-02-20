@@ -1,1 +1,1 @@
-altair==0.1.8
+jpholiday==0.1.8
